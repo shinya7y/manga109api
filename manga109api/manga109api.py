@@ -47,11 +47,11 @@ class Parser(object):
             """
             try:
                 if str(t) == str(int(t)):
-                    return int(t)          # Example case: t == "42"
+                    return int(t)  # Example case: t == "42"
                 else:
-                    return t               # Example case: t == "00001234"
-            except ValueError as e:
-                return t                   # Example case: t == "some text" or t == "000012ab"
+                    return t  # Example case: t == "00001234"
+            except ValueError:
+                return t  # Example case: t == "some text" or t == "000012ab"
 
         def formatted_dict(d):
             """

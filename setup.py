@@ -14,7 +14,6 @@ with open('manga109api/__init__.py') as f:
     # This function simply reads it
     version = re.search(r'__version__ = \'(.*?)\'', f.read()).group(1)
 
-
 setup(
     name='manga109api',
     version=version,

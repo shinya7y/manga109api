@@ -97,9 +97,9 @@ def test_data_type_separated():
                         assert isinstance(obj["@attr_str"], str)
                         assert isinstance(obj["@attr_mix"], str)
                         assert obj["type"] == obj_type
-                        
+
                         for key in (obj.keys() - {"@id", "@attr_num", "@attr_str", "@attr_mix", "type"}):
                             assert isinstance(obj[key], (int, str))
-                        
+
                         if "#text" in obj.keys():
                             assert isinstance(obj["#text"], str)
