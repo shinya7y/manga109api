@@ -60,12 +60,12 @@ class Manga109COCOConverter():
             {
                 "id": 1,
                 "name": "body",
-                "supercategory": "person",
+                "supercategory": "character",
             },
             {
                 "id": 2,
                 "name": "face",
-                "supercategory": "person",
+                "supercategory": "character",
             },
             {
                 "id": 3,
@@ -169,6 +169,7 @@ class Manga109COCOConverter():
             "categories": self.target_categories,
             "images": self.img_dicts,
         }
+        print('Total images:', len(self.img_dicts))
         if self.annotation_dicts:
             print('Total annotations:', len(self.annotation_dicts))
             output_dict["annotations"] = self.annotation_dicts

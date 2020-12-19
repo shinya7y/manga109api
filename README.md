@@ -205,6 +205,15 @@ if __name__ == "__main__":
 ARMS, (c) Kato Masaki
 
 
+## Converting format to COCO
+
+``` bash
+python scripts/convert_manga109_to_coco.py \
+    --manga109_root_dir ${HOME}/data/Manga109s_released_2020_12_18 \
+    --dataset_version v2020.12.18 \
+    --label_filename_prefix manga109s_coco \
+    --add_manga109_info
+```
 
 
 ## Maintainers
