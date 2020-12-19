@@ -206,7 +206,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--manga109_root_dir', required=True, type=str)
     parser.add_argument('--dataset_year', default=2020, type=int)
-    parser.add_argument('--dataset_verion', default="", type=str)
+    parser.add_argument('--dataset_version', default="", type=str)
     parser.add_argument('--label_dirname', default='annotations_coco_format', type=str)
     parser.add_argument('--label_filename_prefix', default='manga109_coco', type=str)
     parser.add_argument('--json_indent', default=None, type=int)
@@ -228,7 +228,7 @@ def main():
     converter = Manga109COCOConverter(
         args.manga109_root_dir,
         year=args.dataset_year,
-        version=args.dataset_verion,
+        version=args.dataset_version,
         book_limit=args.book_limit,
         page_limit=args.page_limit,
         add_manga109_info=args.add_manga109_info)
