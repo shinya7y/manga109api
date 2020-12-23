@@ -34,7 +34,7 @@ def parse_args():
     parser.add_argument('--vis_books', nargs='+', default=default_test, type=str)
     parser.add_argument('--vis_score_thr1', default=0.5, type=float)
     parser.add_argument('--vis_score_thr2', default=0.3, type=float)
-    parser.add_argument('--rect_width1', default=7, type=int)
+    parser.add_argument('--rect_width1', default=5, type=int)
     parser.add_argument('--rect_width2', default=3, type=int)
     parser.add_argument('--draw_truth', action='store_true')
 
